@@ -42,34 +42,61 @@ using namespace std;
     return 0;
 }*/
 
-/* N5
-Write program that counts how many times a specific pair appears in an array of pairs.
-    Example Input: Array of pairs: [(1, 2), (3, 4), (1, 2), (5, 6)], Search pair: (1, 2)
-    Output: The pair (1, 2) appears 2 times.
+
+// N4
+/*Write a C++ program that checks whether a vector is sorted in ascending order.
+Example Input: {1, 2, 3, 4, 5}*/
+
+/*
+int main () {
+    int num1, num2; 
+
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    pair<int, int> pair; 
+
+    // if(num1 > num2) {
+    //     pair.first = num1;
+    //     pair.second = num2;
+    // } else {
+    //     pair.second = num1;
+    //     pair.first = num2;
+    // }
+
+    pair.first = max(num1, num2);
+    pair.second = min(num1, num2);
+
+    cout << "( " << pair.first << ", " << pair.second << ")" << endl;
+}
 */
 
 
-    int main() {
-    vector<pair<int, int>> array_of_pairs = {
-        {1, 2},
-        {3, 4},
-        {1, 2},
-        {5, 6}
-    };
+/* N5
+    Write program that counts how many times a specific pair appears in an array of pairs.
+    Example Input: Array of pairs: [(1, 2), (3, 4), (1, 2), (5, 6)], Search pair: (1, 2)
+    Output: The pair (1, 2) appears 2 times.
+*/
+/*  int main() {
+        vector<pair<int, int>> array_of_pairs = {
+            {1, 2},
+            {3, 4},
+            {1, 2},
+            {5, 6}
+        };
 
-    pair<int, int> search_pair; 
+        pair<int, int> search_pair; 
 
-    cout << "What pair are you looking for?: " << endl;
-    cin >> search_pair.first >> search_pair.second;
+        cout << "What pair are you looking for?: " << endl;
+        cin >> search_pair.first >> search_pair.second;
 
-    int num = 0;
+        int num = 0;
 
-    for ( int i = 0; i < array_of_pairs.size(); i++) { 
-        if (array_of_pairs[i] == search_pair) { 
-            num++;
-        }
-    } 
-
-    cout << "Your pair apears " << num << " times." << endl;
-
-}
+        for ( int i = 0; i < array_of_pairs.size(); i++) { 
+            if (array_of_pairs[i] == search_pair) { 
+                num++;
+            }
+        } 
+        cout << "Your pair apears " << num << " times." << endl;
+    }
+*/  
