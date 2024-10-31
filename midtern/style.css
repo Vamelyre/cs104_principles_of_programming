@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 0 249px;
+    background-size: cover;
+    background-image: url(./media/pexels-vladalex94-1402787\ \(1\)wrerew.jpg);
+}
+
+body {
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+}
+
+.brand-name h3 {
+    font-size: 32px;
+    font-family: 'DM Serif Text', serif;
+}
+
+.menue {
+    display: flex;
+}
+
+.menue button {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin: 0 24px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.menue button:hover {
+    color: #0056b8;
+}
+
+.hero {
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin:  144px 0 40px 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.hero p {
+    font-size: 24px;
+    width: 800px;
+    
+    line-height: 32px;
+}
+
+.hero button {
+    background-color: #0031b8;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 24px 48px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 48px;
+    font-size: 16px;
+
+}
+
+.hero button:hover {
+    background-color: #3d71ff;
+
+}
+
+.search_section, .about_section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.search_section {
+    background-color: #ffffff;
+}
+
+.about_section {
+    background-color: #f1f1f1;
+}
+
+.search_section {
+    display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."; 
+}
+
+@media (max-width: 768px) {
+    main{
+        padding: 0;
+    }
+    nav {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+    .menue {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menue button {
+        margin: 5px 0;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        width: 70%;
+    }
+
+    .hero button {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    main{
+        padding: 0;
+    }
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}
